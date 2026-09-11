@@ -21,6 +21,14 @@
 - [Decision History Summary](../references/decision_history_summary.md)
 - [Application Registry](11_application_registry.md)
 
+## Reusable Templates
+
+- [Web Deck Template v0.1](../templates/web-deck/README.md)
+- [Lecture Experience Template v0.1](../templates/lecture-experience/README.md)
+- [Template Usage Guide](12_template_usage_guide.md)
+- [Template Extraction Audit](../references/template_extraction_audit.md)
+- [Template Source Provenance](../references/template_source_provenance.md)
+
 ## Reading order
 
 먼저 System Overview와 Design DNA로 계열의 경계를 정한다. Web Deck 또는 Experience 중 해당 Family의 Standard를 읽고, Content Contract·Authoring·Time·Completion·QA를 적용한다. 개별 사례는 Reference로 판단 근거를 확인하되, Reference가 Canonical 규칙을 덮어쓰지 않는다.

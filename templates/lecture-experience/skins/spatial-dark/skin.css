@@ -1,0 +1,1 @@
+:root { --accent:#a8c7b8; --muted:#bdc5c0; } body { background:radial-gradient(circle at 70% 10%,#26352e 0,#101216 48%); } .module-grid button { border-radius:16px; box-shadow:0 24px 60px rgba(0,0,0,.22); }

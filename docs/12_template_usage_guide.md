@@ -1,0 +1,30 @@
+# Template Usage Guide
+
+## Choose a family
+
+Choose **Web Deck** for a general talk, presentation, or single-session lecture with Deck → Section → Slide flow. Choose **Lecture Experience** when participants need a Hub, Module/Lesson navigation, progress awareness, or participant-led practice. Do not add Experience features to a Deck merely for visual novelty.
+
+## Start a new project
+
+1. Copy `templates/web-deck/starter/` or `templates/lecture-experience/starter/` as a complete folder.
+2. Change only the starter data file, `skin.css`, and local `assets/` first.
+3. Select a provided Skin or make a project Skin that preserves [Design DNA](02_design_dna.md).
+4. Run a local static server, for example `python -m http.server 8000`.
+5. Perform browser QA at 1440 × 900 and create the new lecture's own repository.
+
+The copied starter has no runtime dependency on this repository or any Reference Project. Do not link to a parent Standard repository from production code.
+
+## Content and options
+
+Web Deck content follows [Content Contract](04_web_deck_content_contract.md). Use [Time Profiles](06_web_deck_time_profiles.md) as recommendations, choose navigator/resume explicitly, and create an Opening → Closing callback according to [Authoring Guide](05_web_deck_authoring_guide.md).
+
+Experience content uses neutral Experience → Module → Lesson data. Enable practice or resume only when the learning goal needs them. Room and Box may be a user-facing metaphor but must not become a mandatory data model.
+
+## Before deployment
+
+- no `undefined` / `null`, broken asset, or clipped content
+- keyboard, touch/navigation, progress, chrome, and fullscreen logic checked
+- optional features checked both OFF and at least one ON path
+- Opening/Closing relation checked for Web Deck
+- no references to `AI_Attitude`, `AX_Lecture`, `AI_First_Step`, or `Codyssey_Lecture`
+- independent static-server run succeeds after copying the starter
