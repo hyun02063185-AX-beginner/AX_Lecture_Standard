@@ -9,15 +9,19 @@ Delivery 형식을 정하기 전에는 필요에 따라 다음 Authoring Layer�
 ```text
 Content Architecture
 ├─ Learning Question
+├─ Audience Context
 ├─ Knowledge Map
-└─ Teaching Route
+├─ Freshness Review
+├─ Teaching Route
+├─ Instructor Grounding
+└─ Lecture Voice
 
 Delivery
 ├─ AX Web Deck
 └─ AX Lecture Experience
 ```
 
-[Lecture Knowledge Map](15_lecture_knowledge_map_authoring_standard_v0.1.md)은 핵심 개념의 관계, 변화, 최신성을 점검하고 Teaching Route를 선택하는 선택적 Authoring 도구다. 두 Delivery Family 위에 있으며 Engine의 하위 기능이 아니다.
+[Lecture Knowledge Map](15_lecture_knowledge_map_authoring_standard_v0.1.md)은 핵심 개념의 관계, 변화, 최신성을 점검하고 Teaching Route를 선택하는 선택적 Authoring 도구다. [Instructor Grounding & Audience-Aware Lecture Voice](16_instructor_grounding_and_audience_voice_v0.1.md)는 강사 경험·관점의 실제 출처를 확인하고 Audience에 맞는 표현을 정한다. 두 표준은 Delivery Family 위에 있으며 Engine의 하위 기능이 아니다.
 
 ## AX Web Deck
 
@@ -52,7 +56,7 @@ Gamification
 
 ## Layer relationship
 
-Design DNA는 Engine 위/아래에 있는 별도 레이어가 아니라 Engine의 CSS/JS 안에 구조적으로 박혀 있다(카드·슬라이드 기하, 모션 타이밍, 타이포 스케일 자체가 곧 Design DNA다). Skin은 그 Engine 코드를 건드리지 않고 색상·폰트·배경 같은 CSS 변수 값만 꽂는 병렬 레이어다. Time Profile과 Knowledge Map은 Engine에 흘러 들어가는 하위 레이어가 아니라, Content를 어떻게 설계하고 쓸지 사람이 참고하는 저작 가이드다 — Engine 코드 어디에도 시간·Section 개수·Map 조건문을 두지 않는다.
+Design DNA는 Engine 위/아래에 있는 별도 레이어가 아니라 Engine의 CSS/JS 안에 구조적으로 박혀 있다(카드·슬라이드 기하, 모션 타이밍, 타이포 스케일 자체가 곧 Design DNA다). Skin은 그 Engine 코드를 건드리지 않고 색상·폰트·배경 같은 CSS 변수 값만 꽂는 병렬 레이어다. Time Profile, Knowledge Map, Instructor Grounding, Lecture Voice는 Engine에 흘러 들어가는 하위 레이어가 아니라, Content를 어떻게 설계하고 쓸지 사람이 참고하는 저작 가이드다 — Engine 코드 어디에도 시간·Section 개수·Map·개인 경험 조건문을 두지 않는다.
 
 ## Family boundary
 
