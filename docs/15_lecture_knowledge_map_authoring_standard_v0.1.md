@@ -17,6 +17,10 @@ Knowledge Map은 다음이 아니다.
 Knowledge Map은 Delivery 형식보다 앞선 Authoring Layer다.
 
 ```text
+Request
+      ↓
+Clarification Gate
+      ↓
 Learning Question
       ↓
 Audience Context
@@ -36,7 +40,7 @@ Delivery Format
 AX Web Deck / AX Lecture Experience
 ```
 
-따라서 Map을 Engine의 하위 기능이나 두 Delivery Family 중 하나의 기능으로 표현하지 않는다. 필요할 때 두 Family가 공통으로 사용할 수 있는 콘텐츠 구조화 도구다. Map은 지식 구조를 담당하며, 강사의 실제 경험·관점 Source와 Audience에 맞는 표현은 [Instructor Grounding & Audience-Aware Lecture Voice](16_instructor_grounding_and_audience_voice_v0.1.md)에서 다룬다.
+따라서 Map을 Engine의 하위 기능이나 두 Delivery Family 중 하나의 기능으로 표현하지 않는다. 필요할 때 두 Family가 공통으로 사용할 수 있는 콘텐츠 구조화 도구다. Map은 지식 구조를 담당하며, 앞단의 [Clarification Gate](17_clarification_and_assumption_control_v0.1.md)는 결과에 큰 영향을 주는 불확실성만 확인한다. 강사의 실제 경험·관점 Source와 Audience에 맞는 표현은 [Instructor Grounding & Audience-Aware Lecture Voice](16_instructor_grounding_and_audience_voice_v0.1.md)에서 다룬다.
 
 ## Core principles
 
@@ -188,6 +192,8 @@ AI 작업자에게는 다음 질문을 권장한다.
 
 Knowledge Map은 객관적 개념과 관계를 다룬다. Map에 포함된 일반 지식이나 AI의 구조화 결과를 강사 개인의 경험·사례·의견·판단으로 바꾸지 않는다. 개인 경험을 사용하거나 Audience에 맞는 Lecture Voice가 필요할 때는 [Instructor Grounding & Audience-Aware Lecture Voice](16_instructor_grounding_and_audience_voice_v0.1.md)를 적용한다.
 
+Map 작성 중 최신 기술 흐름 중심인지 기초 개념 중심인지, 기존 구조 유지인지 변화 관계 중심 재구성인지가 결과를 크게 바꾸면 [Clarification & Assumption Control](17_clarification_and_assumption_control_v0.1.md)에 따라 확인한다. 단순 Map 작성 자체를 이유로 질문을 늘리지 않는다.
+
 ## Boundaries
 
 이 문서는 Authoring / Content Architecture Standard다. Web Deck Engine, Lecture Experience Engine, Entry Transition, Skin, starter JavaScript/CSS를 변경하거나 그 변경을 요구하지 않는다.
@@ -198,6 +204,7 @@ Knowledge Map은 객관적 개념과 관계를 다룬다. Map에 포함된 일�
 - 모든 관련 개념을 넣도록 유도하지 않는가?
 - Map과 Teaching Route가 명확히 구분되는가?
 - Freshness Review와 시간축 검토가 필요한 곳에 적용되는가?
+- 결과를 크게 바꾸는 Map 방향만 확인하고, 사소한 구조 선택을 재질문하지 않는가?
 - 일반 지식과 강사 개인의 경험·관점을 혼동하지 않는가?
 - Web Deck / Lecture Experience와 역할이 겹치지 않는가?
 - Engine 변경을 전제하지 않는가?

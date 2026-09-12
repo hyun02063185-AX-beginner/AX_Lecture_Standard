@@ -4,10 +4,13 @@ AX Lecture Standard는 AI 강의 제작에 사용하는 공통 구조, 디자인
 
 ```text
 AX Lecture System
+├─ Request → Clarification Gate
 ├─ Content Architecture
-│  ├─ Learning Question
-│  ├─ Knowledge Map
-│  └─ Teaching Route
+│  ├─ Learning Question / Audience Context
+│  ├─ Knowledge Map / Freshness Review
+│  ├─ Teaching Route
+│  ├─ Instructor Grounding
+│  └─ Lecture Voice
 ├─ AX Web Deck
 │  └─ 일반 특강 / 발표 / 단일 세션 강의
 └─ AX Lecture Experience
@@ -36,6 +39,7 @@ AX Lecture Standard
 - [AX Lecture Experience Template v0.1](templates/lecture-experience/README.md)
 - [Template Usage Guide](docs/12_template_usage_guide.md)
 - [Lecture Knowledge Map Authoring Standard v0.1](docs/15_lecture_knowledge_map_authoring_standard_v0.1.md) — 강의의 핵심 관계·변화·Teaching Route를 먼저 구조화할 때 사용하는 선택적 Authoring Layer
+- [Clarification & Assumption Control v0.1](docs/17_clarification_and_assumption_control_v0.1.md) — 결과를 크게 바꾸는 불확실성만 확인하고, 안전한 Standard Default는 바로 적용하는 Authoring Rule
 - [Canonical Gap Review](references/canonical_gap_review.md) — 초기 연구 자산과 현재 Canonical의 대조
 - [Legacy Recovery Map](references/legacy_recovery_map.md) — 회수한 자산의 원본 → 현재 위치 추적
 

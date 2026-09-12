@@ -11,7 +11,9 @@
 ## Position in authoring flow
 
 ```text
-Learning Question
+Request
+→ Clarification Gate
+→ Learning Question
 → Audience Context
 → Knowledge Map
 → Freshness Review
@@ -26,6 +28,8 @@ Learning Question
 - **Lecture Voice**: 확인된 내용과 지식을 해당 청중이 이해하기 쉬운 말로 전달한다.
 
 각 단계는 역할이 다르다. Knowledge Map이나 자연스러운 화법이 강사 개인의 경험과 관점을 만들어낼 근거가 되지 않는다.
+
+앞단의 [Clarification & Assumption Control](17_clarification_and_assumption_control_v0.1.md)은 강사 경험·관점, Audience, 화법이 결과를 크게 바꾸는데 불명확할 때만 확인을 요구한다. 이미 확인된 Grounding Source나 Audience 정보는 다시 묻지 않는다.
 
 ## Instructor Grounding
 
@@ -83,7 +87,7 @@ Lecture Voice를 작성하기 전에 다음을 최소로 확인한다.
 - 이 강의를 듣는 목적은 무엇인가?
 - 강의 후 무엇을 이해하거나 할 수 있어야 하는가?
 
-이미 이 정보가 충분히 알려진 경우 다시 묻지 않는다. 화법·난이도·사례 선택에 영향을 주는데 불명확한 경우에만 사용자에게 확인한다. Audience Context는 개인 경험의 근거를 만들지 않으며, 전달 방식만 조정한다.
+이미 이 정보가 충분히 알려진 경우 다시 묻지 않는다. 화법·난이도·사례 선택에 영향을 주는데 불명확한 경우에만 사용자에게 확인한다. 결과에 실질적 영향이 없으면 Audience를 굳이 묻지 않을 수 있다. Audience Context는 개인 경험의 근거를 만들지 않으며, 전달 방식만 조정한다.
 
 ## Audience-aware Lecture Voice
 
