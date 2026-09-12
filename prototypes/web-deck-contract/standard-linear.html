@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Deck Contract · Standard Linear (Fixture A)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="vignette"></div>
+
+  <section id="scene-start" class="scene is-active">
+    <div class="start-inner">
+      <p class="start-kicker">WEB DECK · {N} Sections</p>
+      <h1 class="start-title">AX 실무 입문</h1>
+      <p class="start-sub">생각의 순서를 바꾸는 4개 주제</p>
+      <button id="enter-btn" class="enter-btn">
+        <span class="enter-btn__label">Deck 시작</span>
+        <span class="enter-btn__glow"></span>
+      </button>
+      <p class="start-hint">Fixture A · Standard Linear · Card Fan 없음</p>
+    </div>
+  </section>
+
+  <div id="warp" class="warp"></div>
+
+  <section id="scene-fan" class="scene">
+    <div id="fan-overlay" class="fan-overlay is-open">
+      <button class="fan-close" id="fan-close">← 처음으로</button>
+      <p class="fan-title" id="fan-title"></p>
+      <div id="fan-cards" class="fan-cards"></div>
+      <p class="fan-hint">카드를 선택해 Section으로 입장</p>
+    </div>
+  </section>
+
+  <section id="scene-slides" class="scene">
+    <header class="slide-topbar">
+      <button id="slide-exit" class="slide-exit">← 처음으로</button>
+      <span id="slide-lecture-name" class="slide-lecture-name"></span>
+      <span id="slide-counter" class="slide-counter">1 / 1</span>
+    </header>
+    <div class="slide-progress"><span id="slide-progress-fill"></span></div>
+    <div id="slide-stage" class="slide-stage"></div>
+    <div class="slide-nav">
+      <button id="slide-prev" class="slide-btn">◀ 이전</button>
+      <div id="slide-dots" class="slide-dots"></div>
+      <button id="slide-next" class="slide-btn">다음 ▶</button>
+    </div>
+  </section>
+
+  <div id="rotate-hint" class="rotate-hint" hidden>
+    <span class="rotate-hint__icon">↻</span>
+    <span class="rotate-hint__text">기기를 <b>가로</b>로 돌리면 더 넓게 볼 수 있어요</span>
+    <button id="rotate-hint-close" class="rotate-hint__close" aria-label="닫기">✕</button>
+  </div>
+
+  <script src="js/deck-api.js"></script>
+  <script src="js/fixture-a.js"></script>
+  <script src="js/slides.js"></script>
+  <script src="js/fan.js"></script>
+  <script src="js/deck-main.js"></script>
+</body>
+</html>

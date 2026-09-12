@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AX Web Deck 실험 · Linear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 배경: 별/그리드 캔버스 (Sprint 2 Exp2: Room이 없어져도 layered background는 유지) -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="vignette"></div>
+
+  <!-- ================= SCENE : 시작 ================= -->
+  <section id="scene-start" class="scene is-active">
+    <div class="start-inner">
+      <p class="start-kicker">AI TRANSFORMATION · {N}강</p>
+      <h1 class="start-title">사유의 방</h1>
+      <p class="start-sub">생각의 순서를 바꾸는 {N}강의 여정</p>
+      <button id="enter-btn" class="enter-btn">
+        <span class="enter-btn__label">강의 시작</span>
+        <span class="enter-btn__glow"></span>
+      </button>
+      <p class="start-hint">클릭하여 Section 1부터 선형으로 진행합니다</p>
+    </div>
+  </section>
+
+  <!-- 입장 워프 오버레이 -->
+  <div id="warp" class="warp"></div>
+
+  <!-- ================= SCENE : 슬라이드(=Section들의 연속) ================= -->
+  <section id="scene-slides" class="scene">
+    <header class="slide-topbar">
+      <button id="slide-exit" class="slide-exit">← 처음으로</button>
+      <span id="slide-lecture-name" class="slide-lecture-name"></span>
+      <span id="slide-counter" class="slide-counter">1 / 1</span>
+    </header>
+    <div class="slide-progress"><span id="slide-progress-fill"></span></div>
+
+    <div id="slide-stage" class="slide-stage"><!-- 슬라이드 JS 렌더 --></div>
+
+    <div class="slide-nav">
+      <button id="slide-prev" class="slide-btn">◀ 이전</button>
+      <div id="slide-dots" class="slide-dots"></div>
+      <button id="slide-next" class="slide-btn">다음 ▶</button>
+    </div>
+  </section>
+
+  <div id="rotate-hint" class="rotate-hint" hidden>
+    <span class="rotate-hint__icon">↻</span>
+    <span class="rotate-hint__text">기기를 <b>가로</b>로 돌리면 더 넓게 볼 수 있어요</span>
+    <button id="rotate-hint-close" class="rotate-hint__close" aria-label="닫기">✕</button>
+  </div>
+
+  <!-- 스크립트: 순서 중요 (Sprint 2 Exp2: room.js/intro.js/main.js 대신 deck-main.js) -->
+  <script src="js/site-config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/slides.js"></script>
+  <script src="js/deck-main.js"></script>
+</body>
+</html>
