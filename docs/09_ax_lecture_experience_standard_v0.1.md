@@ -19,6 +19,16 @@ Experience
 
 이 구조는 가능한 기본 어휘이며 모든 프로젝트에 강제되지 않는다. 학습 목적과 공간 서사가 필요할 때 선택한다.
 
+## Content architecture
+
+과정형 강의는 필요할 때 [Knowledge Map](15_lecture_knowledge_map_authoring_standard_v0.1.md)의 Cluster를 Module 후보로 사용할 수 있다.
+
+```text
+Knowledge Map Cluster → Module candidate
+```
+
+이는 출발점일 뿐이다. Knowledge Map의 구조를 Module 구조로 그대로 복사하지 말고, 학습 경험, 선수 지식, 실습, 시간 배분에 맞춰 Module과 Lesson을 재설계한다.
+
 ## CORE candidates
 
 - spatial narrative

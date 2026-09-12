@@ -16,6 +16,7 @@
 10. [Standard Change Policy](10_standard_change_policy.md)
 11. [AX Entry Transition Standard v0.1](13_ax_entry_transition_standard_v0.1.md)
 12. [AX Lecture Copy Style Guide v0.1](14_lecture_copy_style_guide_v0.1.md)
+13. [Lecture Knowledge Map Authoring Standard v0.1](15_lecture_knowledge_map_authoring_standard_v0.1.md)
 
 ## Reference
 
@@ -45,4 +46,4 @@
 
 ## Reading order
 
-먼저 System Overview와 Design DNA로 계열의 경계를 정한다. Web Deck 또는 Experience 중 해당 Family의 Standard를 읽고, Content Contract·Authoring·Time·Completion·QA를 적용한다. 개별 사례는 Reference로 판단 근거를 확인하되, Reference가 Canonical 규칙을 덮어쓰지 않는다.
+먼저 System Overview와 Design DNA로 계열의 경계를 정한다. 주제의 관계·변화·최신성 검토가 중요하면 [Lecture Knowledge Map Authoring Standard](15_lecture_knowledge_map_authoring_standard_v0.1.md)로 Content Architecture를 먼저 잡는다. 이후 Web Deck 또는 Experience 중 해당 Family의 Standard를 읽고, Content Contract·Authoring·Time·Completion·QA를 적용한다. 개별 사례는 Reference로 판단 근거를 확인하되, Reference가 Canonical 규칙을 덮어쓰지 않는다.
