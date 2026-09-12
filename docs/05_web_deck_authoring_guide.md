@@ -1,5 +1,20 @@
 # Web Deck Authoring Guide
 
+## Recommended authoring flow
+
+새 강의는 다음 흐름으로 설계한다.
+
+```text
+Topic
+→ Learning Question
+→ Optional Knowledge Map
+→ Teaching Route
+→ Deck Structure
+→ Slide Authoring
+```
+
+[Knowledge Map](15_lecture_knowledge_map_authoring_standard_v0.1.md)은 선택 사항이지만, 여러 기술 개념의 관계, 시간에 따른 변화, 최신성 검토가 강의 이해에 중요한 경우 먼저 만드는 것을 권장한다. 단일 기능 설명이나 매우 짧은 실습처럼 관계가 거의 없는 강의에는 강제하지 않는다. Map 전체를 슬라이드로 옮기지 말고, 이번 Deck에서 실제로 설명할 Teaching Route를 선택한다.
+
 ## Section은 콘텐츠 단위다
 
 Section은 화면 한 장이 아니라 의미 있는 콘텐츠 묶음이다. 하나의 Section은 여러 Slide을 가질 수 있으며, Section 전환은 메시지·호흡·발표의 변화를 명확히 할 때 사용한다.
