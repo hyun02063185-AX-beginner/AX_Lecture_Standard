@@ -25,7 +25,7 @@ Both starters include the [AX Entry Warp](13_ax_entry_transition_standard_v0.1.m
 
 ## Content and options
 
-Web Deck content follows [Content Contract](04_web_deck_content_contract.md). Use [Time Profiles](06_web_deck_time_profiles.md) as recommendations, choose navigator/resume explicitly, and create an Opening → Closing callback according to [Authoring Guide](05_web_deck_authoring_guide.md).
+Web Deck content follows [Content Contract](04_web_deck_content_contract.md). Use [Time Profiles](06_web_deck_time_profiles.md) as recommendations, choose navigator/resume explicitly, and create an Opening → Closing callback according to [Authoring Guide](05_web_deck_authoring_guide.md). Write the actual copy following the [Lecture Copy Style Guide](14_lecture_copy_style_guide_v0.1.md) — natural spoken voice over lecture-note phrasing, one judgment question: would a presenter actually say this line out loud?
 
 Experience content uses neutral Experience → Module → Lesson data. Enable practice or resume only when the learning goal needs them. Room and Box may be a user-facing metaphor but must not become a mandatory data model.
 
@@ -35,5 +35,6 @@ Experience content uses neutral Experience → Module → Lesson data. Enable pr
 - keyboard, touch/navigation, progress, chrome, and fullscreen logic checked
 - optional features checked both OFF and at least one ON path
 - Opening/Closing relation checked for Web Deck
+- copy passes the [Copy Style Guide](14_lecture_copy_style_guide_v0.1.md) spoken-voice check
 - no references to `AI_Attitude`, `AX_Lecture`, `AI_First_Step`, or `Codyssey_Lecture`
 - independent static-server run succeeds after copying the starter
