@@ -8,6 +8,10 @@ Section은 화면 한 장이 아니라 의미 있는 콘텐츠 묶음이다. 하
 
 일반 Web Deck에서는 Room, Box, 방, 상자, 입장, unlock 같은 Experience 전용 언어를 기본적으로 쓰지 않는다. 선형 발표의 메시지와 청중의 이해를 우선한다.
 
+## Slide Type Mixing
+
+같은 유형(예: 설명형 목록)을 3~5장 연속으로 쓰지 않는다. 설명형 슬라이드 사이에 key-message나 quote 같은 "쉼표" 슬라이드를 배치해 [Visual Rhythm](02_design_dna.md)을 지킨다.
+
 ## Copy Voice
 
 문장을 원고체에서 강의 화법으로 옮기는 세부 기준은 [Lecture Copy Style Guide](14_lecture_copy_style_guide_v0.1.md)를 따른다. "강사가 이 문장을 강의실에서 그대로 말해도 어색하지 않은가?"가 판정 기준이다.
