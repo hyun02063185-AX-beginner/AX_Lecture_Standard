@@ -14,6 +14,8 @@ Choose **Web Deck** for a general talk, presentation, or single-session lecture 
 
 주제의 관계, 변화, 또는 최신성 검토가 중요하면 starter를 채우기 전에 [Lecture Knowledge Map Authoring Standard](15_lecture_knowledge_map_authoring_standard_v0.1.md)를 검토한다. 이는 선택적 Content Architecture 단계이며 template이나 Engine을 수정하는 지시가 아니다.
 
+강의 방향을 크게 바꿀 정보가 불명확하면 [Clarification & Assumption Control](17_clarification_and_assumption_control_v0.1.md)에 따라 필요한 확인만 먼저 한다. template의 디자인·navigation·transition 기본값은 Standard Default로 적용하며 재확인하지 않는다.
+
 The copied starter has no runtime dependency on this repository or any Reference Project. Do not link to a parent Standard repository from production code.
 
 ## Entrance Transition

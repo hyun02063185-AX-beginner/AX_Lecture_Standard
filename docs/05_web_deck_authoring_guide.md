@@ -6,6 +6,7 @@
 
 ```text
 Topic
+→ Clarification Gate
 → Learning Question
 → Audience Context
 → Optional Knowledge Map
@@ -16,6 +17,8 @@ Topic
 → Deck Structure
 → Slide Authoring
 ```
+
+[Clarification Gate](17_clarification_and_assumption_control_v0.1.md)에서 먼저 결과의 방향·난이도·구조·화법을 크게 바꿀 불확실성만 확인한다. 이미 알려진 정보와 Standard Default는 다시 묻지 않으며, 한 번에는 핵심 질문 1–3개만 우선한다. 중요한 Decision Point가 작업 중 드러나면 추가 확인할 수 있다.
 
 [Knowledge Map](15_lecture_knowledge_map_authoring_standard_v0.1.md)은 선택 사항이지만, 여러 기술 개념의 관계, 시간에 따른 변화, 최신성 검토가 강의 이해에 중요한 경우 먼저 만드는 것을 권장한다. 단일 기능 설명이나 매우 짧은 실습처럼 관계가 거의 없는 강의에는 강제하지 않는다. Map 전체를 슬라이드로 옮기지 말고, 이번 Deck에서 실제로 설명할 Teaching Route를 선택한다.
 
@@ -48,6 +51,7 @@ Slide 수는 강의 시간이 아니다. 계획과 rehearsal에서는 Lecture, D
 ## Authoring checklist
 
 - 섹션과 슬라이드의 메시지 관계가 분명한가?
+- 결과를 크게 바꾸는 불확실성만 확인하고, Standard Default를 불필요하게 재질문하지 않았는가?
 - Opening material이 Closing에서 회수되는가?
 - 문장이 [Copy Style Guide](14_lecture_copy_style_guide_v0.1.md)의 화법 기준을 만족하는가?
 - 개인 경험·사례·관점이 확인된 Source에 근거하는가?
