@@ -34,6 +34,7 @@ Experience content uses neutral Experience → Module → Lesson data. Enable pr
 - no `undefined` / `null`, broken asset, or clipped content
 - keyboard, touch/navigation, progress, chrome, and fullscreen logic checked
 - optional features checked both OFF and at least one ON path
+- if the Deck has a return-to-Entrance interaction, the [Restart Test](08_web_deck_qa_contract.md#restart--re-entry) passes (repeated restarts land on first slide, initial progress, no stale DOM intercepting clicks)
 - Opening/Closing relation checked for Web Deck
 - copy passes the [Copy Style Guide](14_lecture_copy_style_guide_v0.1.md) spoken-voice check
 - no references to `AI_Attitude`, `AX_Lecture`, `AI_First_Step`, or `Codyssey_Lecture`

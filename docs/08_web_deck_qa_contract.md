@@ -17,6 +17,25 @@ QA는 기능 확인뿐 아니라 AX Lecture Design DNA가 실제 브라우저에
 - chrome auto-hide
 - causal transition
 
+## Restart / Re-entry
+
+이 Deck이 Entrance/Cover로 돌아가는 인터랙션(예: "처음으로" 버튼)을 구현했다면 다음을 확인한다 — `resume: false` 기준이다.
+
+```text
+Restart Test
+1. deck 중간(또는 마지막 slide)까지 이동한다
+2. Entrance/Cover로 복귀한다
+3. 다시 진입한다
+4. first section / first slide / initial progress·counter를 확인한다
+```
+
+- 최소 3회 반복해도 이전 위치가 남지 않는다(state leak 없음)
+- Entrance로 돌아간 화면에서 이전 slide의 DOM이 클릭을 가로채지 않는다 — 특히 `pointer-events`처럼 부모 컨테이너가 비활성화돼도 자식 요소가 자신의 값을 따로 가지면 상속되지 않는 속성을 조심한다
+- 재진입 후 keyboard(ArrowLeft가 첫 슬라이드에서 더 이전으로 가지 않음)와 progress bar/counter가 초기 상태인지 확인한다
+- `resume: true`인 Deck의 "이어보기"는 이 테스트의 대상이 아니다 — 재시작(Restart)과 이어보기(Resume)는 다른 개념이다
+
+Entrance로 돌아가는 인터랙션이 없는 Deck(v0.1 기본 엔진처럼 Cover 이후 되돌아가는 경로가 없는 경우)에는 이 테스트가 적용되지 않는다.
+
 ## Layout
 
 기본 검증 viewport는 **1440 × 900**이다.
