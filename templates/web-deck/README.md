@@ -14,3 +14,9 @@ This template is a standalone, framework-free implementation of Deck → Section
 Use [Time Profiles](../../docs/06_web_deck_time_profiles.md) to select 30/60/90/120 presentation options. `sectionNavigator` and `resume` are explicit content settings; v0.1 keeps them as data contract values and does not auto-enable them.
 
 `engine/deck-engine.js` is the readable engine source. `starter/engine/deck-engine.js` is the identical self-contained distribution required for copying `starter/` alone.
+
+## Entrance Transition
+
+The starter ships with `#deck-cover` (a landing screen with a `[data-action="enter"]` button) and `engine/entry-transition.js` + `engine/entry-transition.css`, implementing the [AX Entry Warp](../../docs/13_ax_entry_transition_standard_v0.1.md) — the shared circular entrance transition used across the AX Lecture family. Clicking the cover's enter button calls `window.startEntryTransition(callback)`; the deck's first render only happens once the screen is fully covered. A deck without `#deck-cover` renders immediately, exactly as in v0.1.
+
+Do not edit `entry-transition.js`/`.css` to add lecture-specific content — recolor via the `--ax-warp-center` / `--ax-warp-mid` / `--ax-warp-outer` CSS variables in `skin.css` if a project needs its own palette; keep duration, easing, and geometry unchanged.

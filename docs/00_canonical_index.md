@@ -14,6 +14,8 @@
 8. [Web Deck QA Contract](08_web_deck_qa_contract.md)
 9. [AX Lecture Experience Standard v0.1](09_ax_lecture_experience_standard_v0.1.md)
 10. [Standard Change Policy](10_standard_change_policy.md)
+11. [AX Entry Transition Standard v0.1](13_ax_entry_transition_standard_v0.1.md)
+12. [AX Lecture Copy Style Guide v0.1](14_lecture_copy_style_guide_v0.1.md)
 
 ## Reference
 

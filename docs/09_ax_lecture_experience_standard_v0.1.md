@@ -52,6 +52,10 @@ Experience의 Fan은 Module/Lesson 선택, 공간 이동, 과정 overview를 지
 
 Practice는 participant-led activity다. presenter-led인 Demo와 구분한다. Rank, XP, Unlock, Reward, Completion Celebration은 Experience 전용 Optional이며 단순 재미를 위해 자동 적용하지 않는다.
 
+## Entry Transition
+
+Entrance에서 Hub로 넘어갈 때는 [AX Entry Warp](13_ax_entry_transition_standard_v0.1.md)를 기본 패턴으로 사용한다. Module/Lesson 사이 이동에는 강제하지 않는다 — Entry Warp는 Entrance → Hub 진입 시 한 번만 재생되는 전환이다.
+
 ## Boundary with Web Deck
 
 | 기준 | Web Deck | Lecture Experience |

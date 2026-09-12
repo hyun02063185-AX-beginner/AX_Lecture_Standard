@@ -26,5 +26,20 @@
   };
   const action = name => { if(name === "hub") return hub(); if(name === "next" && current < lessons.length-1) { current++; lesson(); } if(name === "prev" && current>0) { current--; lesson(); } if(name === "practice") app.querySelector(".practice-panel").hidden=false; if(name === "close-practice") app.querySelector(".practice-panel").hidden=true; };
   document.addEventListener("keydown", event => { if(event.key === "ArrowRight") action("next"); if(event.key === "ArrowLeft") action("prev"); if(event.key === "Escape") hub(); });
-  hub();
+
+  /* Optional Entrance/Cover screen (AX Entry Warp — docs/13). An experience
+     that wants a landing screen adds an #experience-cover element with a
+     [data-action="enter"] button; the hub only renders once that button
+     starts the entry transition. Experiences without #experience-cover
+     render immediately, unchanged from v0.1 behavior. Module/Lesson moves
+     are unaffected either way. */
+  const cover = document.getElementById("experience-cover");
+  const enterButton = cover && cover.querySelector('[data-action="enter"]');
+  if (enterButton && window.startEntryTransition) {
+    enterButton.addEventListener("click", () => {
+      window.startEntryTransition(() => { cover.hidden = true; hub(); });
+    });
+  } else {
+    hub();
+  }
 }());

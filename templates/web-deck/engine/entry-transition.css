@@ -1,0 +1,27 @@
+/* AX Entry Warp — visual contract. Circular light warps from the center of
+   the screen, covers it fully, holds, then releases into the destination
+   view. Geometry/duration/easing/cover/release must stay identical across
+   every AX template; only the callback destination differs.
+   See docs/13_ax_entry_transition_standard_v0.1.md. */
+:root {
+  --ax-warp-center: #f4ecdf;
+  --ax-warp-mid: #e9a85a;
+  --ax-warp-outer: #c48165;
+}
+.ax-entry-warp {
+  position: fixed; top: 50%; left: 50%;
+  width: 220vmax; height: 220vmax;
+  margin: -110vmax 0 0 -110vmax;
+  z-index: 9999; border-radius: 50%; pointer-events: all;
+  background: radial-gradient(circle,
+    var(--ax-warp-center) 0%, var(--ax-warp-center) 40%,
+    var(--ax-warp-mid) 66%, var(--ax-warp-outer) 84%, transparent 100%);
+  opacity: 0; transform: scale(0); transform-origin: 50% 50%;
+}
+.ax-entry-warp--active { animation: ax-entry-warp 1600ms cubic-bezier(.45, 0, .2, 1) forwards; }
+@keyframes ax-entry-warp {
+  0% { opacity: 0; transform: scale(0); }
+  28% { opacity: 1; transform: scale(1); }
+  55% { opacity: 1; transform: scale(1.03); }
+  100% { opacity: 0; transform: scale(1.12); }
+}
