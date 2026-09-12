@@ -14,6 +14,15 @@ Choose **Web Deck** for a general talk, presentation, or single-session lecture 
 
 The copied starter has no runtime dependency on this repository or any Reference Project. Do not link to a parent Standard repository from production code.
 
+## Entrance Transition
+
+```text
+Entrance Transition
+= AX Entry Warp
+```
+
+Both starters include the [AX Entry Warp](13_ax_entry_transition_standard_v0.1.md) by default, wired through `#deck-cover` / `#experience-cover` and `engine/entry-transition.js`. Do not author a separate entrance transition for a new lecture — the shared warp keeps the entry feel consistent across the whole AX Lecture family. If a project has a specific reason to deviate (a different destination callback is fine; a different geometry/duration/easing is not), record it as an Application-specific Decision rather than silently diverging.
+
 ## Content and options
 
 Web Deck content follows [Content Contract](04_web_deck_content_contract.md). Use [Time Profiles](06_web_deck_time_profiles.md) as recommendations, choose navigator/resume explicitly, and create an Opening → Closing callback according to [Authoring Guide](05_web_deck_authoring_guide.md).

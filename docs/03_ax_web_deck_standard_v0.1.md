@@ -31,6 +31,15 @@ Time Profile
 
 Progress는 CORE다. Resume은 Optional이며, engine이 시간이나 slide 수로 자동 활성화하지 않는다.
 
+## Presentation UX
+
+```text
+Default Entry Transition:
+AX Entry Warp
+```
+
+Entrance/Cover에서 첫 Slide로 넘어갈 때 [AX Entry Warp](13_ax_entry_transition_standard_v0.1.md)를 기본으로 사용한다. 이는 Slide-to-slide transition(causal transition, Engine CORE)과는 별개다 — Entry Warp는 진입 시 한 번만 재생되고, Slide 간 이동에는 관여하지 않는다.
+
 ## Presentation options
 
 ```js

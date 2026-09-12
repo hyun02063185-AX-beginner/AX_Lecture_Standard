@@ -45,5 +45,19 @@
   app.addEventListener("touchstart", event => { startX = event.touches[0].clientX; }, { passive: true });
   app.addEventListener("touchend", event => { const delta = event.changedTouches[0].clientX - startX; if (Math.abs(delta) > 48) action(delta < 0 ? "next" : "prev"); }, { passive: true });
   document.addEventListener("mousemove", () => { document.body.classList.remove("chrome-hidden"); clearTimeout(hideTimer); hideTimer = setTimeout(() => document.body.classList.add("chrome-hidden"), 1800); });
-  render();
+
+  /* Optional Entrance/Cover screen (AX Entry Warp — docs/13). A deck that
+     wants a landing screen adds a #deck-cover element with a
+     [data-action="enter"] button; the deck only renders once that button
+     starts the entry transition. Decks without #deck-cover render
+     immediately, unchanged from v0.1 behavior. */
+  const cover = document.getElementById("deck-cover");
+  const enterButton = cover && cover.querySelector('[data-action="enter"]');
+  if (enterButton && window.startEntryTransition) {
+    enterButton.addEventListener("click", () => {
+      window.startEntryTransition(() => { cover.hidden = true; render(); });
+    });
+  } else {
+    render();
+  }
 }());
