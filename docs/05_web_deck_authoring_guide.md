@@ -7,13 +7,19 @@
 ```text
 Topic
 → Learning Question
+→ Audience Context
 → Optional Knowledge Map
+→ Freshness Review
 → Teaching Route
+→ Instructor Grounding
+→ Lecture Voice
 → Deck Structure
 → Slide Authoring
 ```
 
 [Knowledge Map](15_lecture_knowledge_map_authoring_standard_v0.1.md)은 선택 사항이지만, 여러 기술 개념의 관계, 시간에 따른 변화, 최신성 검토가 강의 이해에 중요한 경우 먼저 만드는 것을 권장한다. 단일 기능 설명이나 매우 짧은 실습처럼 관계가 거의 없는 강의에는 강제하지 않는다. Map 전체를 슬라이드로 옮기지 말고, 이번 Deck에서 실제로 설명할 Teaching Route를 선택한다.
+
+강사 개인 경험·사례·의견·판단을 쓸 때는 [Instructor Grounding & Audience-Aware Lecture Voice](16_instructor_grounding_and_audience_voice_v0.1.md)를 적용한다. AI는 이를 만들지 않으며, 제공되거나 확인된 근거만 정리해 Audience에 맞는 화법으로 옮긴다. Audience Context가 이미 충분히 알려졌다면 다시 묻지 않는다.
 
 ## Section은 콘텐츠 단위다
 
@@ -29,7 +35,7 @@ Section은 화면 한 장이 아니라 의미 있는 콘텐츠 묶음이다. 하
 
 ## Copy Voice
 
-문장을 원고체에서 강의 화법으로 옮기는 세부 기준은 [Lecture Copy Style Guide](14_lecture_copy_style_guide_v0.1.md)를 따른다. "강사가 이 문장을 강의실에서 그대로 말해도 어색하지 않은가?"가 판정 기준이다.
+문장을 원고체에서 강의 화법으로 옮기는 세부 기준은 [Lecture Copy Style Guide](14_lecture_copy_style_guide_v0.1.md)를 따른다. 개인 경험과 관점의 출처·Audience Context는 [Instructor Grounding & Audience-Aware Lecture Voice](16_instructor_grounding_and_audience_voice_v0.1.md)를 먼저 따른다. "강사가 이 문장을 강의실에서 그대로 말해도 어색하지 않은가?"는 Grounded 내용과 사실을 유지한 뒤의 화법 판정 기준이다.
 
 ## Opening → Closing Callback
 
@@ -44,6 +50,8 @@ Slide 수는 강의 시간이 아니다. 계획과 rehearsal에서는 Lecture, D
 - 섹션과 슬라이드의 메시지 관계가 분명한가?
 - Opening material이 Closing에서 회수되는가?
 - 문장이 [Copy Style Guide](14_lecture_copy_style_guide_v0.1.md)의 화법 기준을 만족하는가?
+- 개인 경험·사례·관점이 확인된 Source에 근거하는가?
+- 수강생의 수준과 목적에 맞는 Lecture Voice인가?
 - 콘텐츠 밀도와 화면 리듬이 발표 호흡에 맞는가?
 - 링크는 외부 link contract를 따르는가?
 - [QA Contract](08_web_deck_qa_contract.md)의 defect-free 기준을 만족하는가?
