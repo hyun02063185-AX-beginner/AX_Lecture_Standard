@@ -22,6 +22,8 @@
 - [Source Asset Summary](../references/source_asset_summary.md)
 - [Decision History Summary](../references/decision_history_summary.md)
 - [Application Registry](11_application_registry.md)
+- [Canonical Gap Review](../references/canonical_gap_review.md)
+- [Legacy Recovery Map](../references/legacy_recovery_map.md)
 
 ## Reusable Templates
 
@@ -30,6 +32,16 @@
 - [Template Usage Guide](12_template_usage_guide.md)
 - [Template Extraction Audit](../references/template_extraction_audit.md)
 - [Template Source Provenance](../references/template_source_provenance.md)
+
+## Supporting Evidence
+
+이 문서들은 Canonical이 아니다 — 왜 위 규칙이 지금 형태가 됐는지 보여주는 과거 근거이며, 규칙 자체는 항상 위 Canonical 절이 우선한다.
+
+- [Source Audit](../evidence/source-audit/) — 3개 원본 프로젝트(AX Lecture/AI FirstStep/Codyssey Lecture) 코드 감사
+- [Visual Baseline Validation](../evidence/visual-baseline/) — Design DNA의 실제 브라우저 검증
+- [Design Experiments](../evidence/design-experiments/) — Engine Boundary, Content Contract, Time Profile, Completion Signal 실험(당시 초안 포함)
+- [AI Attitude Golden Research](../evidence/ai-attitude/) — 첫 Golden Application이 어떻게 만들어졌는지의 근거
+- [Prototypes](../prototypes/README.md) — 위 실험의 실제 실행 코드(production template 아님)
 
 ## Reading order
 

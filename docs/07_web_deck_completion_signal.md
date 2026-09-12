@@ -10,6 +10,8 @@ Web Deck의 종료는 게임 보상이 아니라 발표의 의미를 닫는 신�
 
 모든 profile은 권장값이며, 콘텐츠의 성격에 따라 변경할 수 있다. 단 B와 C는 [Authoring Guide](05_web_deck_authoring_guide.md)의 Opening → Closing Callback 규칙을 충족해야 한다.
 
+Variant C의 "다음 행동"은 새 필드를 만들지 않는다 — closing slide의 기존 `link` 필드를 "더 볼 자료"가 아니라 "지금 할 행동"으로 재해석해 쓴다.
+
 ## Web Deck에서 기본 제외하는 종료 방식
 
 - XP

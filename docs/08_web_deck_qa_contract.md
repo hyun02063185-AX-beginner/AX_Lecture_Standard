@@ -7,6 +7,7 @@ QA는 기능 확인뿐 아니라 AX Lecture Design DNA가 실제 브라우저에
 - required validation
 - `undefined` / `null` 노출 0
 - optional field의 safe fallback
+- 배포 전 최소 점검: 모든 title 존재(deck meta·section·slide) · 핵심 메시지 존재(본문/목록 최소 1개) · image가 있으면 caption 또는 title 중 하나로 alt 확보 · link가 있으면 url 필수 · 화면에서 "undefined"/"null"/"[object Object]" 육안 확인 1회
 
 ## Presentation
 
@@ -60,6 +61,6 @@ Entrance로 돌아가는 인터랙션이 없는 Deck(v0.1 기본 엔진처럼 Co
 - restraint
 - motion semantics
 - visual rhythm
-- closing state
+- closing state — progress가 끝까지 채워지고 마지막 slide dot이 활성 상태로 표시되는지 확인
 
 각 적용 사례는 해당 repository의 QA 기록과 screenshot을 자체적으로 보관할 수 있으나, 본 Standard repository는 근거 없이 그것을 복제하지 않는다.
